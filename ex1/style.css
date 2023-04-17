@@ -1,0 +1,304 @@
+@charset "UFT-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은 고딕";
+    color: #333333;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1000px;
+    height: 650px;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+header {
+    float: left;
+    position: absolute;
+}
+
+.a {
+    float: left;
+    width: 200px;
+    height: 650px;
+}
+
+.logo {
+    width: 200px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.menu {
+    width: 180px;
+    float: left;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    text-align: center;
+    z-index: 1;
+    align-items: center;
+}
+
+.mainmenu>li {
+    float: left;
+    width: 180px;
+}
+
+.mainmenu>li>a {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #333333;
+    color: #ffffff;
+}
+.mainmenu>li>a:hover {
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+.submenu {
+    float: left;
+    width: 180px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 180px;
+    background-color: #cccccc;
+    display: none;
+    z-index: 1;
+}
+
+.submenu>li>a {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #cccccc;
+    color: #ffffff;
+}
+
+.submenu>li>a:hover {
+    background-color: #9b9b9b;
+}
+
+
+.imgslide {
+    width: 800px;
+    height: 350px;
+    float: right;
+    position: relative;
+}
+
+.imgslide>a {
+    display: block;
+    position: absolute;
+}
+
+.imgslide span {
+    width: 160px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    left: 40%;
+    top: 45%;
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+
+.contents {
+    width: 800px;
+    height: 200px;
+    float: right;
+}
+
+.notice {
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+
+.tab {
+    float: left;
+    width: 300px;
+}
+
+.notice h4 {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+
+.notice ul {
+    float: left;
+    width: 280px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.notice li span {
+    float: right;
+}
+
+.notice li:hover {
+    font-weight: bold;
+}
+
+.gallery {
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+
+.gallery h4 {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+
+.gallery ul li {
+    float: left;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.gallery img {
+    width: 80px;
+    height: 80px;
+}
+
+.gallery li:hover {
+    opacity: 0.5;
+}
+
+.shortcut {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+.shortcut img {
+    float: right;
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+}
+
+.sctext {
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    background-color: rgba(200, 200, 200, 0.5);
+    margin-top: 85px;
+    margin-left: 50px;
+}
+
+.d {
+    width: 800px;
+    height: 100px;
+    float: right;
+    line-height: 100px;
+    background-color: #cccccc;
+}
+
+.btlogo {
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+
+.btlogo img {
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.copyright {
+    width: 400px;
+    height: 100px;
+    float: left;
+    font-size: 15px;
+    text-align: center;
+}
+
+.familysite {
+    width: 200px;
+    height: 100px;
+    float: right;
+}
+
+.familysite select {
+    float: right;
+    height: 30px;
+    width: 150px;
+    margin-top: 35px;
+    margin-right: 25px;
+}
+
+#modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+#modal.active {
+    display: block;
+}
+
+.modal_up {
+    width: 400px;
+    height: 300px;
+    position: fixed;
+    left: 35%;
+    top: 20%;
+    background-color: #ffffff;
+}
+
+.uptitle {
+    padding: 30px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.upbody {
+    padding: 30px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #333333;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
